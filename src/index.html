@@ -6,11 +6,214 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Antools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    
+<body class="page">
+    <header class="header">
+        <div class="header__container container">
+            <a class="logo" href="#">
+                <img class="logo__icon" src="./images/logo.png" alt="Antools logo">
+                <span class="logo__text">antools.</span>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Home</a>
+                    </li>
+                    <li class="nav__item nav__item_dropdown">
+                        <a class="nav__link" href="#tools">
+                            Categories
+                            <img class="nav__arrow" src="./images/chevron.png" alt="">
+                        </a>
+                        <ul class="nav__submenu">
+                            <li class="nav__subitem"><a class="nav__sublink" href="#tools">Design</a></li>
+                            <li class="nav__subitem"><a class="nav__sublink" href="#tools">Development</a></li>
+                            <li class="nav__subitem"><a class="nav__sublink" href="#tools">Productivity</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#tools">My Collections</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a class="header__login" href="#">Login</a>
+                <a class="button button_small" href="#">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__container container">
+                <h1 class="hero__title">
+                    Awesome tools for Designer &amp; Developer<span class="hero__dot">.</span>
+                </h1>
+                <p class="hero__text">
+                    Antool is a web collection of information on paid or free Design and Development tools
+                </p>
+
+                <form class="search" action="https://www.google.com/search" method="get" target="_blank">
+                    <img class="search__icon" src="./images/search.png" alt="">
+                    <input class="search__input" type="text" name="q" placeholder="find more than 430+ tools..."
+                        aria-label="Search tools">
+                    <button class="search__button button" type="submit">Search</button>
+                </form>
+
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.facebook.com" target="_blank">
+                            <img class="socials__icon" src="./images/facebook.png" width="14" height="26" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.instagram.com" target="_blank">
+                            <img class="socials__icon" src="./images/instagram.png" width="27" height="27" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://twitter.com" target="_blank">
+                            <img class="socials__icon" src="./images/twitter.png" width="30" height="24" alt="Twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <img class="hero__image" src="./images/hero.png" alt="Tools illustration">
+        </section>
+
+        <section class="tools" id="tools">
+            <div class="container">
+                <h2 class="tools__title">Most Popular Tools</h2>
+                <p class="tools__text">Tools for the best Designers and Developers most popularly used in the world</p>
+
+                <ul class="tools__list">
+                    <li class="tool-card">
+                        <div class="tool-card__head">
+                            <img class="tool-card__logo" src="./images/figma.png" alt="Figma">
+                            <div class="tool-card__info">
+                                <h3 class="tool-card__name">FIGMA</h3>
+                                <p class="tool-card__price">Free</p>
+                            </div>
+                        </div>
+                        <p class="tool-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="tool-card__actions">
+                            <button class="tool-card__icon-button tool-card__icon-button_like" type="button" aria-label="Like"></button>
+                            <button class="tool-card__icon-button tool-card__icon-button_save" type="button" aria-label="Add to collection"></button>
+                            <a class="tool-card__visit" href="https://www.figma.com" target="_blank">Visit</a>
+                        </div>
+                    </li>
+                    <li class="tool-card">
+                        <div class="tool-card__head">
+                            <img class="tool-card__logo" src="./images/sketch.png" alt="Sketch">
+                            <div class="tool-card__info">
+                                <h3 class="tool-card__name">Sketch</h3>
+                                <p class="tool-card__price">Trial &amp; Paid</p>
+                            </div>
+                        </div>
+                        <p class="tool-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="tool-card__actions">
+                            <button class="tool-card__icon-button tool-card__icon-button_like" type="button" aria-label="Like"></button>
+                            <button class="tool-card__icon-button tool-card__icon-button_save" type="button" aria-label="Add to collection"></button>
+                            <a class="tool-card__visit" href="https://www.sketch.com" target="_blank">Visit</a>
+                        </div>
+                    </li>
+                    <li class="tool-card">
+                        <div class="tool-card__head">
+                            <img class="tool-card__logo" src="./images/vscode.png" alt="Visual Studio Code">
+                            <div class="tool-card__info">
+                                <h3 class="tool-card__name">Visual Studio Code</h3>
+                                <p class="tool-card__price">Free</p>
+                            </div>
+                        </div>
+                        <p class="tool-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="tool-card__actions">
+                            <button class="tool-card__icon-button tool-card__icon-button_like" type="button" aria-label="Like"></button>
+                            <button class="tool-card__icon-button tool-card__icon-button_save" type="button" aria-label="Add to collection"></button>
+                            <a class="tool-card__visit" href="https://code.visualstudio.com" target="_blank">Visit</a>
+                        </div>
+                    </li>
+                    <li class="tool-card">
+                        <div class="tool-card__head">
+                            <img class="tool-card__logo" src="./images/notion.png" alt="Notion">
+                            <div class="tool-card__info">
+                                <h3 class="tool-card__name">Notion</h3>
+                                <p class="tool-card__price">Free &amp; Paid</p>
+                            </div>
+                        </div>
+                        <p class="tool-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="tool-card__actions">
+                            <button class="tool-card__icon-button tool-card__icon-button_like" type="button" aria-label="Like"></button>
+                            <button class="tool-card__icon-button tool-card__icon-button_save" type="button" aria-label="Add to collection"></button>
+                            <a class="tool-card__visit" href="https://www.notion.so" target="_blank">Visit</a>
+                        </div>
+                    </li>
+                    <li class="tool-card">
+                        <div class="tool-card__head">
+                            <img class="tool-card__logo" src="./images/slack.png" alt="Slack">
+                            <div class="tool-card__info">
+                                <h3 class="tool-card__name">Slack</h3>
+                                <p class="tool-card__price">Free &amp; Paid</p>
+                            </div>
+                        </div>
+                        <p class="tool-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="tool-card__actions">
+                            <button class="tool-card__icon-button tool-card__icon-button_like" type="button" aria-label="Like"></button>
+                            <button class="tool-card__icon-button tool-card__icon-button_save" type="button" aria-label="Add to collection"></button>
+                            <a class="tool-card__visit" href="https://slack.com" target="_blank">Visit</a>
+                        </div>
+                    </li>
+                    <li class="tool-card">
+                        <div class="tool-card__head">
+                            <img class="tool-card__logo" src="./images/invision.png" alt="InVision">
+                            <div class="tool-card__info">
+                                <h3 class="tool-card__name">Invision</h3>
+                                <p class="tool-card__price">Free &amp; Paid</p>
+                            </div>
+                        </div>
+                        <p class="tool-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="tool-card__actions">
+                            <button class="tool-card__icon-button tool-card__icon-button_like" type="button" aria-label="Like"></button>
+                            <button class="tool-card__icon-button tool-card__icon-button_save" type="button" aria-label="Add to collection"></button>
+                            <a class="tool-card__visit" href="https://www.invisionapp.com" target="_blank">Visit</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <button class="tools__more button button_outline" type="button">Load more</button>
+            </div>
+        </section>
+
+        <section class="brands">
+            <div class="container">
+                <div class="brands__box">
+                    <h2 class="brands__title">Trusted more than 150+ brand</h2>
+                    <ul class="brands__list">
+                        <li class="brands__item"><img class="brands__logo" src="./images/microsoft.png" width="193" height="42" alt="Microsoft"></li>
+                        <li class="brands__item"><img class="brands__logo" src="./images/google.png" width="157" height="51" alt="Google"></li>
+                        <li class="brands__item"><img class="brands__logo" src="./images/slack-logo.png" width="194" height="49" alt="Slack"></li>
+                        <li class="brands__item"><img class="brands__logo" src="./images/wordpress.png" width="194" height="44" alt="WordPress"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('.tool-card__icon-button').forEach(function (button) {
+            button.addEventListener('click', function () {
+                button.classList.toggle('tool-card__icon-button_active');
+            });
+        });
+    </script>
 </body>
 
 </html>
